@@ -27,7 +27,7 @@ class PostRepository implements PostRepositoryInterface
             $postFile = new PostFile;
             $postFile->post_id = $post->id;
             $postFile->name = $file->getClientOriginalName();
-            $postFile->file_path = '/storage/' . $filePath;
+            $postFile->file_path = '/storage/'.$filePath;
             $postFile->save();
         }
 
